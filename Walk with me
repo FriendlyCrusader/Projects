@@ -1,0 +1,56 @@
+hello = input("As you approach a small town you hear an old man call out to you, 'Hello there, sorry to interput you on your travels, but do you think you help me through this town?' Type Yes or No \n")
+print(' ')
+gretting = str.lower(hello)
+if gretting == 'yes':
+  print("Thank you so much, not many tend to help me this day and age.")
+ else:
+  print('Sorry to bother you then have a good day.') 
+  exit()
+  reader_name = input("As you start leading the old man into town, you hear him say. 'I'm sorry for forgetting to ask, but what is your name? \n")
+  print("Thanks, it's always interesting to see what you name yourself.") 
+  response = input("Possible responses \n 1. What do you mean by yourself? \n 2. Your welcome. \n 3. Start walking again without saying anything. \n Type 1, 2, or 3 \n")
+  if response == '1':
+  print("I don't know what your parents named you. So you do get to tell me what you want to tell me. Welp, lets get going. \n")
+else:
+  print(' ')
+which_inn = input('Once you finally reach the gate of the town, it seems to be approaching night. There are a couple of inns still open and may have rooms. There is The Royal Oak, and The warm hearthstone. Which one would you like to go too? Type Royal or Hearthstone \n')
+inn = str.lower(which_inn)
+if inn == 'royal':
+  room = input("As you reach the Inn. The Innkeeper calls out to you. 'Looking for a room old friend?' \n Possible response: \n Yes, I am how much would it cost? \n Maybe, it depends on the price. How much does it cost? \n Type Yes or Maybe ")
+  room_bill = input("Since the chance of anyone else coming in tonight isn't high, I'll cut you a deal. $100 dollars for room and breakfest for the night. How does that sound? \n Possible Responses: \n Yeah sounds good and No. Type Yeah or No")
+  room_bill = str.lower(room_bill) 
+  if room_bill == 'yeah':
+    print('You pay the innkeeper $100 and head on up to room to get some sleep. \n ') 
+  else:
+    print('You hear the old man moving up and paying for the room. He turns to you and says "I just said I need help to get though town, not that I was broke." \n')
+else:
+  room = input("As you reach the Inn. The Innkeeper calls out to you. 'Looking for a room old friend?' \n Possible response: \n Yes, I am how much would it cost? \n Maybe, it depends on the price. How much does it cost? \n Type Yes or Maybe ")
+  room_bill = input("Since the chance of anyone else coming in tonight isn't high, I'll cut you a deal. $100 dollars for room and breakfest for the night. How does that sound? \n Possible Responses: \n Yeah sounds good and No. Type Yeah or No \n")
+  room_bill = str.lower(room_bill) 
+  if room_bill == 'yeah':
+    print('You pay the innkeeper $100 and head on up to room to get some sleep. \n ')
+  else:
+    print("You hear the old man moving up and paying for the room. He turns to you and says 'I just said I need help to get though town, not that I was broke.' Let's get some rest \n")
+if inn == 'royal': 
+  wake_up = input("When you wake up to the smell of coffee and fresh toast. You see the old man eating his toast and enjoing his coffee. Once you get up and sit down with him and a couple sips of coffee and bites of toast. The old man asked, 'Why did you choose this one? Why not the Hearthstone?' Possible response: \n I wanted to make sure I had a good bed to sleep in. Or I liked the name more than Hearthstone. \n Type Good or More")
+  print("The old man responds, as long as your decisions are your own. \n ")
+else:
+  wake_up = input("When you wake up to the smell of coffee and fresh toast. You see the old man eating his toast and enjoing his coffee. Once you get up and sit down with him and a couple sips of coffee and bites of toast. The old man asked, 'Why did you choose this one? Why not the Royal Oak?' Possible response: \n I wanted to make sure I had a good bed to sleep in. Or I liked the name more than Royal Oak. \n Type Good or More \n  ")
+  print("The old man responds, as long as your decisions are your own.")
+change = input("After finishing breakfast, the old man says 'Let’s get a move on, we should reach the end of the town by the end of the day.' Once you each finish your meal you walk outside and start heading your way to the other side of town. Along the way there is a beggar on the side of the street. He asks you for some spare change so he can get some change, what do you do? \n Give him some change or Ignore him? \n Type Give or Ignore \n ")
+change = str.lower(change)
+if change == 'give':
+  print("The beggar thanks you profusely and joyful heads off to shop, to buy food or drink is unknown to you. \n ")
+else:
+  print("He starts heading off to a different place to beg since traffic is as strong as being by the markets. \n ")
+questions = input("As You and the old man start to leave you see the gate slowly approaching and once you get past the gate you hear the old man speak. “Thank you for traveling with me through this town. It is always a joy to spend time with a real person. Is there any question I can answer for you?” \n possible responses: \n No, Yes, what do you mean by 'a real person?' \n type Yes or No \n ")
+questions = str.lower(questions)
+if questions == 'yes':
+  forth = input("I mean you are flesh and blood no? Do you not see the text on your screen? \n Type Yes or No \n ")
+  forth = str.lower(forth)
+  if forth == 'yes':
+    print("Those inns that you chose from there was not one difference between them. It was just your choice and perception that made them that way. But more importantly was the beggar. It didn’t matter if you gave him change, he would later be killed over it once we left. If you didn’t he would starve. Would you change what you did with the info you know now? Just say what you would do, That’s pretty much all I’ll remember of this trip. Thank you for being with me but it's time for you to go, maybe send a friend this way. It does tend to get lonely just being code. Goodbye " + reader_name + ". \n ")
+  else:
+    print("That's all good, Good luck on your travels " + reader_name +". \n ")
+else:
+  print("If you ever do, just play again and I'll still be here though I wouldn't remember anything sadly" + reader_name)
